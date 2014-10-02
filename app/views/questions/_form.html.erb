@@ -1,0 +1,15 @@
+<h3>Add a Question with Answer</h3>
+
+<%= form_for [ @quiz, @question ] do |f| %>
+  <p>
+    <%= f.label :Question %><br/>
+    <%= f.text_field :question %>
+  </p>
+    <p>
+    <%= f.label :Answer %><br/>
+    <%= f.text_field :answer %>
+  </p>
+  <p>
+    <%= f.submit 'Add Question' %>
+  </p>
+<% end %>

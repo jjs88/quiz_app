@@ -1,0 +1,2 @@
+<%= quiz.name %>: <%= link_to 'quiz', quiz_path(quiz) %>
+<%= link_to "delete", quiz_path(quiz), method: :delete, data: {confirm: "Delete Quiz?"} %></br>

@@ -1,0 +1,11 @@
+<h3>Create a Quiz!</h3>
+
+<%= form_for (@quiz) do |f| %>
+  <p>
+    <%= f.label :Quiz_Name %><br/>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Create Quiz' %>
+  </p>
+<% end %>

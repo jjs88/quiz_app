@@ -1,0 +1,9 @@
+<%= @question.question %>, <%= link_to 'back to quiz', quiz_path(@question.quiz) %>
+<%= render 'answers/answer_form' %>
+<% if @answers.present? %>
+  <% if @answers.answer == @question.answer%>
+       You are Correct!
+  <% else %>
+       Wrong! Please answer again.	
+ <% end %>
+<% end %>
